@@ -1,0 +1,24 @@
+@media screen and (min-width: 580px) {
+    main {
+        display: grid;
+        font-size: 20px;
+        grid-auto-flow: row;
+        grid-template-columns: auto, auto;
+    }
+    nav {
+        flex-direction: row-reverse;
+    }
+    h2 {
+        grid-column: span 2;
+        grid-row: auto;
+    }
+    .card {
+        display: inline;
+        grid-column: auto / auto;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        margin-top: auto;
+        padding: 2rem;
+    }
+}
