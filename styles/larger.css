@@ -2,6 +2,7 @@
     main {
         display: grid;
         font-size: 20px;
+        gap: 2rem;
         grid-auto-flow: row;
         grid-template-columns: auto, auto;
     }
@@ -14,11 +15,16 @@
     }
     .card {
         display: inline;
+        min-height: 150px;
+        width: auto;
         grid-column: auto / auto;
         border-style: solid;
         border-width: 1px;
         border-radius: 10px;
+        border-left-color: blue;
+        border-left-style: solid;
+        border-left-width: 8px;
         margin-top: auto;
-        padding: 2rem;
+        padding: 1rem;
     }
 }
