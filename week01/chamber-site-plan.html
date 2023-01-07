@@ -5,16 +5,80 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta name="author" content="Vaughn Palmer">
             <meta name='description' content="Vaughn Palmer WDD230 Chamber of Commerce website plan">
-            <link rel="stylesheet" href="styles/base.css">
-            <title>WDD230 - Chamber Site Plan</title>
+            <link rel="stylesheet" href="styles/chamber-site-plan-base.css">
+            <link rel="media stylesheet" href="styles/chamber-site-plan-larger.css">
+            <title>Vaughn Palmer - Chamber Site Plan</title>
         </head>
         <body>
-            <header></header>
-            <main></main>
-            <footer>
+            <nav class="round-top">
+                <p><a href="chamber-site-plan.html">Home</a></p>
+                <p><a href="">Discover</a></p>
+                <p><a href="">Directory</a></p>
+                <p><a href="">Join</a></p>
+            </nav>
+            <header class="round-bottom">
+                <h1>West Valley City Chamber of Commerce</h1>
+            </header>
+            <main>
+                <h2 class="section-header">Welcome to my site plan! Here is the information that you will need to know:</h2>
+                <section class="card">
+                    <h2>Site Name</h2>
+                    <p>This name was chosen to represent the chamber of commerce running in West Valley City Utah.</p>
+                </section>
+                <section class="card">
+                    <h2>Site Purpose</h2>
+                    <p>This site will be the home to the WVC Chamber of Commerce and provide additional information as well as the option to join.</p>
+                </section>
+                <section class="card">
+                    <h2>Scenarios</h2>
+                    <ul>
+                        <li>What benefits will I recieve, and how do I sign up?</li>
+                        <li>What qualifications will I need to meet in order to join?</li>
+                        <li>What goals and visions do you have as an organization?</li>
+                    </ul>
+                </section>
+                <section class="card">
+                    <h2>Typography</h2>
+                    <h3 class="roboto-mono">Roboto Mono</h3>
+                    <p class="roboto-mono">This font will be used for both paragraphs and headings because it looks nice, readable, and simplistic.</p>
+                </section>
+                <section class="card wide-card color-card">
+                    <h2>Color Schema</h2>
+                    <div>
+                        <h3>Camel</h3>
+                        <h4>#B88848</h4>
+                        <div class="color-square camel"></div> 
+                    </div>
+                    <div>
+                        <h3>Prussian Blue</h3>
+                        <h4>#002E62</h4>
+                        <div class="color-square prussian-blue"></div> 
+                    </div>
+                    <div>
+                        <h3>Tea Green</h3>
+                        <h4>#C1DBB3</h4>
+                        <div class="color-square tea-green"></div> 
+                    </div>
+                    <div>
+                        <h3>Blue NCS</h3>
+                        <h4>#0094C6</h4>
+                        <div class="color-square blue-ncs"></div> 
+                    </div>
+                    <div>
+                        <h3>Dark Sea Green</h3>
+                        <h4>#7EBC89</h4>
+                        <div class="color-square dark-sea-green"></div>
+                    </div>
+                </section>
+                <section class="card wide-card">
+                    <h2>Wireframe</h2>
+                    <img src="chamber-site-wireframe.png" alt="Wireframe image template">
+                </section>
+            </main>
+            <footer class="round-top round-bottom">
                 <p id="copyright">Copyright </p>
                 <p class="highlight" id="lastModified">Last Modified: </p>
             </footer>
-            <script src="scripts/getDates.js"></script>
+            <script src="../scripts/getDates.js"></script>
         </body>
     </html>
