@@ -6,6 +6,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta name="author" content="Vaughn Palmer">
             <meta name='description' content="Vaughn Palmer WDD230 assignment portal">
+            <link rel="stylesheet" href="styles/normalize.css">
             <link rel="stylesheet" href="styles/base.css">
             <link rel="media stylesheet" href="styles/larger.css">
             <link rel="icon" href="favicon.ico">
@@ -18,9 +19,23 @@
         </head>
         <body>
             <nav>
-                <img src="images/hamburger.svg" alt="Open menu icon">
-                <a href="https://www.linkedin.com/in/vaughnpalmer2003/">Linkedin</a>
-                <a href="https://www.byui.edu">BYU Idaho</a>
+                <ul class="menu">
+                    <li>
+                        <a href="#" id="menu-button" title="Menu"><img src="images/hamburger.svg" alt="Open menu icon" id="menu-icon"></a>
+                    </li>
+                    <li>
+                        <a href="#" id="dark-mode" class="menu-item" title="Dark Mode">Dark Mode☑️</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active menu-item" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/vaughnpalmer2003/" class="menu-item" title="Linkedin">Linkedin</a>
+                    </li>
+                    <li>
+                        <a href="https://www.byui.edu" class="menu-item" title="BYU Idaho">BYU Idaho</a>
+                    </li>
+                </ul>
             </nav>
             <header>
                 <img src="images/profile.jpeg" alt="Vaughn Palmer Profile picture" class="profile">
@@ -42,6 +57,9 @@
                         </li>
                         <li>
                             <p><a href="https://codepen.io/LetsGetJiggyWithIt/pen/GRBWZbK">Responsive Menu</a></p>
+                        </li>
+                        <li>
+                            <p><a href="week02/bom.html">BOM Top 10</a></p>
                         </li>
                     </ul>
                 </section>
@@ -67,5 +85,7 @@
                 <p class="highlight" id="lastModified">Last Modified: </p>
             </footer>
             <script src="scripts/getDates.js"></script>
+            <script src="scripts/menu.js"></script>
+            <script src="scripts/darkModeToggle.js"></script>
         </body>
     </html>
