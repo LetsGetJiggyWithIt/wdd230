@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 400px;
+}
+
+img {
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
