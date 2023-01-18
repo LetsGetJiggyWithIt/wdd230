@@ -22,7 +22,7 @@
                 <div id="filler-div"></div>
                 <ul class="menu">
                     <li>
-                        <a href="#" id="menu-button" title="Menu"><img src="images/hamburger.svg" alt="Open menu icon" id="menu-icon"></a>
+                        <a href="#" id="menu-button" title="Menu"><img src="images/hamburger.svg" alt="Open menu icon" id="menu-icon" loading="lazy"></a>
                     </li>
                     <li>
                         <a href="#" class="active menu-item" title="Home">Home</a>
@@ -39,15 +39,19 @@
                 </ul>
             </nav>
             <header>
-                <img src="images/profile.jpeg" alt="Vaughn Palmer Profile picture" class="profile">
+                <img src="images/profile.jpeg" alt="Vaughn Palmer Profile picture" class="profile" loading="lazy">
                 <h1>Vaughn Palmer</h1>
             </header>
             <main>
-                <picture>
-                    <source media="(min-width:960px)" srcset="images/jordan-river-temple.webp">
-                    <source media="(min-width:400px)" srcset="images/jordan-river-temple-small.webp">
-                    <img src="images/jordan-river-temple.webp" alt="Jordan River Temple" id="hero-banner">
-                </picture>
+                <div class="hero-div">
+                    <picture>
+                        <source media="(min-width:400px)" srcset="images/jordan-river-temple.webp">
+                        <img src="images/jordan-river-temple-small.webp" alt="Jordan River Temple" id="hero-banner" loading="lazy">
+                    </picture>
+                    <div class="hero-label">
+                        <p>Jordan River Temple</p>
+                    </div>
+                </div>
                 <h2>WDD230: Course activity portal</h2>
                 <section class="card">
                     <h3>Learning activities</h3>
@@ -85,6 +89,7 @@
                     <p id="weather">Weather: </p>
                     <p id="visits">Visits to this page: </p>
                 </section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96825.13507206943!2d-112.07720728514678!3d40.67869557733945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528cddfa3588b3%3A0xf57b74998d78ace5!2sWest%20Valley%20City%2C%20UT!5e0!3m2!1sen!2sus!4v1674063528908!5m2!1sen!2sus" width="100%" height="450" style="border:0; grid-column:span 2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </main>
             <footer>
                 <p id="copyright">Copyright </p>

@@ -9,6 +9,27 @@
         grid-auto-flow: row;
         grid-template-columns: 1fr 1fr;
     }
+    .hero-div {
+        position: static;
+        grid-column: span 2;
+        width: 100%;
+    }
+    
+    .hero-label {
+        padding: 1.5rem;
+        position: relative;
+        bottom: 140px;
+        width: 42%;
+    }
+
+    .hero-label p {
+        font-size: 3vw;
+    }
+
+    .hero-div img {
+      width: 100%;
+      max-width: 960px;
+    }
     nav {
         flex-direction: row-reverse;
         gap: 3rem;
