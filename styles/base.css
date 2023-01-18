@@ -14,6 +14,10 @@
     background: pink;
 }
 
+.tall-card {
+  grid-row: span 2;
+}
+
 #filler-div.close {
   height: 85px;
 }
