@@ -104,6 +104,14 @@ header {
   display: block;
 }
 
+picture {
+  grid-column: span 2;
+}
+
+picture img {
+  width: 100%;
+}
+
 main {
   margin: auto;
   grid-column: 1 / 8;

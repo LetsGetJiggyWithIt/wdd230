@@ -76,6 +76,7 @@ body {
 }
     
 .hero-div {
+    display: inline;
     transform: translate(4%, -130%);
 }  
 
