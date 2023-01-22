@@ -1,11 +1,11 @@
 <!DOCTYPE html>
     <html lang="en-us">
         <head>
-            <title>Home - West Valley City Chamber of Commerce</title>
+            <title>Discover - West Valley City Chamber of Commerce</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta name="author" content="Vaughn Palmer">
-            <meta name='description' content="Vaughn Palmer WDD230 West Valley City Chamber of Commerce Homepage">
+            <meta name='description' content="Vaughn Palmer WDD230 West Valley City Chamber of Commerce Discover">
             <link rel="stylesheet" href="styles/base.css">
             <link rel="media stylesheet" href="styles/larger.css">
             <link rel="icon" href="favicon.ico">
@@ -24,7 +24,7 @@
                         <a href="#" id="menu-button" title="Menu"><img src="images/hamburger.svg" alt="Open menu icon" id="menu-icon"></a>
                     </li>
                     <li>
-                        <a href="#" class="active menu-item" title="Home">Home</a>
+                        <a href="index.html" class="menu-item" title="Home">Home</a>
                     </li>
                     <li>
                         <a href="#" id="dark-mode" class="menu-item" title="Dark Mode">Dark Mode☑️</a>
@@ -33,7 +33,7 @@
                         <a href="#" class="menu-item" title="Join">Join</a>
                     </li>
                     <li>
-                        <a href="discover.html" class="menu-item" title="Discover">Discover</a>
+                        <a href="#" class="active menu-item" title="Discover">Discover</a>
                     </li>
                     <li>
                         <a href="#" class="menu-item" title="Directory">Directory</a>
@@ -43,42 +43,40 @@
             <header class="round-bottom">
                 <h1>West Valley City Chamber of Commerce</h1>
             </header>
-            <main>
-                <section class="wide-card">
-                    <img class="hero-image" src="https://media.istockphoto.com/id/1223731996/photo/japanese-male-businessmen-shake-hands-with-each-other.jpg?s=612x612&w=0&k=20&c=FxZLQ9Nfeb6iZGrdZC6Elk2MUr3nRtC_Iak1gL9HWpE=" alt="Two men in suits shaking hands">
-                    <div class="hero-div">
-                        <p class="hero-text">Welcome to<br>our chamber!</p>
-                        <a href="#" class="hero-button">Join Now</a>
+            <main class="discover-main">
+                <section class="sidebar">
+                    <h1>West Valley City Statistics</h1>
+                    <p>Population: 145,138</p>
+                    <p>Men: 50.5%</p>
+                    <p>Women: 45.5</p>
+                    <p>Average age: 30.1</p>
+                    <p>Average income: $73,917</p>
+                    <h1>Visit Count</h1>
+                    <p id="userVisits1"></p>
+                    <h1>Days since last visit</h1>
+                    <p id="userVisits2"></p>
+                </section>
+                <section class="discover-images">
+                    <div class="image-div wide">
+                        <picture><img src="images/valley-fair-mall.jpeg" alt="Valley Fair Mall" loading="lazy"></picture>
+                        <p>"Valley Fair Mall"</p>
                     </div>
-                </section>
-                <h1>Current and Upcoming events</h1>
-                <section class="card">
-                    <h2>Pyramid scheming meeting</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    <button>Learn More</button>
-                </section>
-                <section class="card">
-                    <h2>Stock market manipulation protest</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    <button>Learn More</button>
-                </section>
-                <h1>Weather</h1>
-                <section class="card wide-card">
-                    <h2>Sunny</h2>
-                    <p>☀️It's hot.☀️</p>
-                    <p>Humidity:</p>
-                    <p>Wind Chill:</p>
-                </section>
-                <h1>Highlights</h1>
-                <section class="card">
-                    <h2>How I became a Millionare: Featuring Lotso Moe Nee.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    <a href="#">Read more</a>
-                </section>
-                <section class="card">
-                    <h2>Top 5 Business tips from Mr. Well Thee</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    <a href="#">Read more</a>
+                    <div class="image-div">
+                        <picture><img src="images/wvc-fitness-center.jpeg" alt="West Valley City Fitness Center" loading="lazy"></picture>
+                        <p><i>"West Valley City Family Fitness Center"</i></p>
+                    </div>
+                    <div class="image-div">
+                        <picture><img src="images/lodestone-park.jpg" alt="Lodestone Park" loading="lazy"></picture>
+                        <p>"Lodestone Park"</p>
+                    </div>
+                    <div class="image-div wide">
+                        <picture><img src="images/usana-amphitheatre.jpg" alt="Usana Amphitheatre" loading="lazy"></picture>
+                        <p><i>"Usana Amphitheatre"</i></p>
+                    </div>
+                    <div class="image-div">
+                        <picture><img src="images/maverik center.jpg" alt="Maverik Center" loading="lazy"></picture>
+                        <p>"Maverik Center"</p>
+                    </div>
                 </section>
             </main>
             <footer class="round-top">
@@ -94,5 +92,6 @@
             <script src="scripts/menu.js"></script>
             <script src="scripts/darkModeToggle.js"></script>
             <script src="scripts/getDates.js"></script>
+            <script src="scripts/getVisits.js"></script>
         </body>
     </html>
