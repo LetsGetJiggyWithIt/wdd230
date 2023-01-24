@@ -1,0 +1,76 @@
+th {
+    padding: 1rem;
+    border: 1px solid black;
+    border-left: none;
+    color: darkgreen;
+}
+
+th[scope=col] {
+    background: purple;
+}
+
+td {
+    text-align: center;
+    background: white;
+    border: 1px solid black;
+    border-left: none;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+tr {
+    background: gray;
+}
+
+tbody tr:first-child th {
+    background: lightblue;
+    color: gray;
+}
+
+thead th{
+    background: pink;
+    border-right: none;
+    border-bottom: none;
+    color: black;
+}
+
+tbody tr:nth-child(odd) {
+    background: lightgray;
+}
+
+tr:nth-child(odd) td {
+    background: lightgray;
+}
+
+tr:nth-child(even) td {
+    background: gray;
+}
+
+tbody tr:first-child th:last-child {
+    border-right: none;
+}
+
+tbody tr:first-child th:first-child {
+    background: pink;
+    border: none;
+    border-right: 1px solid black;
+}
+
+table {
+    border-spacing: 0px;
+    border: 1px solid black;
+    caption-side: bottom;
+}
+
+caption {
+    background: wheat;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-top: none;
+}
+
+body {
+    background: purple;
+}
