@@ -138,40 +138,70 @@ body {
     font-family: 'Roboto Mono';
     margin: 0;
 }
-    
-.hero-div {
-    display: inline;
-    transform: translate(4%, -130%);
-}  
 
-.hero-image {
+.hero-div img {
   width: 100%;
+  max-width: 960px;
   filter: sepia(100%) saturate(150%) brightness(90%) hue-rotate(80deg);
 }
 
-.hero-text {
-    display: inline;
-    font-size: 3vw;
-    font-weight: bold;
-    color: #0094C6;
+picture {
+  grid-column: 1 / 3;
+  grid-row: 1/-1;
 }
 
+.hero-div {
+  position: static;
+  grid-column: span 2;
+  display: grid;
+  grid-template: 1fr 1fr/ 1fr 1fr;
+  width: 100%;
+}
+
+.hero-label {
+  padding: 1rem;
+  padding-left: 1.5rem;
+  grid-column: 1 / 3;
+  grid-row: 2/3;
+  z-index: 1;
+  display: flex;
+}
+
+.hero-label p {
+  font-size: 3vw;
+  display: inline;
+  align-self: flex-end;
+  margin: 0px;
+  margin-right: 1rem;
+}
+
+.hero-div img {
+  width: 100%;
+  max-width: 960px;
+}
+
+
 .hero-button {
-    background: var(--blue-ncs);
-    border: none;
-    border-radius: 5px;
-    font-family: "Roboto Mono";
-    padding: 8px;
-    font-size: 2vw;
-    color: var(--tea-green);
-    text-decoration: none;
-    transition: background 0.2s ease-in-out;
-    z-index: 1;
-    font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: var(--blue-ncs);
+  padding: .8rem;
+  font-family: "Roboto Mono";
+  font-size: 1.8vw;
+  align-self: flex-end;
+}
+
+.hero-button a {
+  text-decoration: none;
+  color: var(--dark-sea-green);
 }
 
 .hero-button:hover {
-    background: #025e7d;
+  background: #14b1e5;
+}
+
+.hero-button:hover a {
+  color: var(--tea-green);
 }
 
 .wide-card {
@@ -283,3 +313,4 @@ h1 {
     font-size: 25px;
     grid-column: span 2;
 }   
+

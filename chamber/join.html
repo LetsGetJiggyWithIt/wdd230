@@ -1,11 +1,11 @@
 <!DOCTYPE html>
     <html lang="en-us">
         <head>
-            <title>Discover - West Valley City Chamber of Commerce</title>
+            <title>Join - West Valley City Chamber of Commerce</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta name="author" content="Vaughn Palmer">
-            <meta name='description' content="Vaughn Palmer WDD230 West Valley City Chamber of Commerce Discover">
+            <meta name='description' content="Vaughn Palmer WDD230 West Valley City Chamber of Commerce Join Page">
             <link rel="stylesheet" href="styles/base.css">
             <link rel="media stylesheet" href="styles/larger.css">
             <link rel="icon" href="favicon.ico">
@@ -24,16 +24,16 @@
                         <a href="#" id="menu-button" title="Menu"><img src="images/hamburger.svg" alt="Open menu icon" id="menu-icon"></a>
                     </li>
                     <li>
-                        <a href="index.html" class="menu-item" title="Home">Home</a>
+                        <a href="#" class="menu-item" title="Home">Home</a>
                     </li>
                     <li>
                         <a href="#" id="dark-mode" class="menu-item" title="Dark Mode">Dark Mode☑️</a>
                     </li>
                     <li>
-                        <a href="join.html" class="menu-item" title="Join">Join</a>
+                        <a href="#" class="active menu-item" title="Join">Join</a>
                     </li>
                     <li>
-                        <a href="#" class="active menu-item" title="Discover">Discover</a>
+                        <a href="discover.html" class="menu-item" title="Discover">Discover</a>
                     </li>
                     <li>
                         <a href="#" class="menu-item" title="Directory">Directory</a>
@@ -43,41 +43,30 @@
             <header class="round-bottom">
                 <h1>West Valley City Chamber of Commerce</h1>
             </header>
-            <main class="discover-main">
-                <section class="sidebar">
-                    <h1>West Valley City Statistics</h1>
-                    <p>Population: 145,138</p>
-                    <p>Men: 50.5%</p>
-                    <p>Women: 45.5</p>
-                    <p>Average age: 30.1</p>
-                    <p>Average income: $73,917</p>
-                    <h1>Visit Count</h1>
-                    <p id="userVisits1"></p>
-                    <h1>Days since last visit</h1>
-                    <p id="userVisits2"></p>
-                </section>
-                <section class="discover-images">
-                    <div class="image-div wide">
-                        <picture><img src="images/valley-fair-mall.jpeg" alt="Valley Fair Mall" loading="lazy"></picture>
-                        <p>"Valley Fair Mall"</p>
-                    </div>
-                    <div class="image-div">
-                        <picture><img src="images/wvc-fitness-center.jpeg" alt="West Valley City Fitness Center" loading="lazy"></picture>
-                        <p><i>"West Valley City Family Fitness Center"</i></p>
-                    </div>
-                    <div class="image-div">
-                        <picture><img src="images/lodestone-park.jpg" alt="Lodestone Park" loading="lazy"></picture>
-                        <p>"Lodestone Park"</p>
-                    </div>
-                    <div class="image-div wide">
-                        <picture><img src="images/usana-amphitheatre.jpg" alt="Usana Amphitheatre" loading="lazy"></picture>
-                        <p><i>"Usana Amphitheatre"</i></p>
-                    </div>
-                    <div class="image-div">
-                        <picture><img src="images/maverik center.jpg" alt="Maverik Center" loading="lazy"></picture>
-                        <p>"Maverik Center"</p>
-                    </div>
-                </section>
+            <main>
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label>First Name*<input type="text" name="fname" required></label>
+                        <label>Last Name*<input type="text" name="lname" required></label>
+                        <label>Email*<input type="email" name="email" placeholder="someone@example.com" required></label>
+                        <label>Phone Number*<input type="tel" name="phone" placeholder="5555555554" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        <label>Business Position Title*<input type="text" name="btitle" required></label>
+                        <label>Business Name/Title*<input type="text" name="bname" required></label>
+                        <label>Business Description<input type="text" name="description"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Membership Level</legend>
+                        <label><input type="radio" value="np" name="memberlevel"> Non-Profit</label>
+                        <label><input type="radio" value="bronze" name="memberlevel"> Bronze</label>
+                        <label><input type="radio" value="silver" name="memberlevel"> Silver</label>
+                        <label><input type="radio" value="gold" name="memberlevel"> Gold</label>
+                    </fieldset>
+                    <input type="submit" value="Join Chamber">
+                </form> 
             </main>
             <footer class="round-top">
                 <p id="copyright">Copyright </p>
@@ -92,6 +81,5 @@
             <script src="scripts/menu.js"></script>
             <script src="scripts/darkModeToggle.js"></script>
             <script src="scripts/getDates.js"></script>
-            <script src="scripts/getVisits.js"></script>
         </body>
     </html>
