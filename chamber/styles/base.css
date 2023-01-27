@@ -8,6 +8,53 @@
     --dark-sea-green: #7EBC89;
 }
 
+fieldset legend{
+  font-weight: bolder;
+  padding: 0 .5rem;
+}
+
+label.top input{
+  display: block;
+  min-height: 44px;
+  margin-top: 0.3rem;
+  margin-bottom: 0.8rem;
+  width: 90%;
+}
+
+label.radio {
+  display: block;
+  margin: 0.3rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--prussian-blue);
+}
+
+a:link {
+  color: var(--prussian-blue);
+}
+
+#submitButton {
+  background: #9ae9a8;
+  border: none;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  font-weight: bold;
+  color: var(--blue-ncs);
+  font-size: 16px;
+  font-family: "Roboto Mono";
+}
+
+#submitButton:hover {
+  background: #95f1a6;
+  color: #1964ba;
+}
+
 .wide {
   grid-column: auto;
 }
