@@ -114,6 +114,45 @@
                     <p>Visits to this site: <span id="userVisits"></span></p>
                 </section>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96825.13507206943!2d-112.07720728514678!3d40.67869557733945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528cddfa3588b3%3A0xf57b74998d78ace5!2sWest%20Valley%20City%2C%20UT!5e0!3m2!1sen!2sus!4v1674063528908!5m2!1sen!2sus" height="450" style="border:0; grid-column:span 2; border-radius: 10px; width:100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <form class="wide" method="post" action="">
+                    <fieldset>
+                        <label>Full Name*<input type="text" id="name" name="name" title="Full Name" placeholder="John Doe" required></label>
+                        <label>Email*<input type="email" id="email" name="email" title="Email" placeholder="someone@gmail.com" required></label>
+                        <label>Page Rating* [<span id="rating">5</span>]<input id="rating-input" title="Rating" type="range" min="1" max="10" name="rating" value=5></label>
+                        <label>Username*<input id="password1" type="password" pattern="(?=.*\W)(?=.*[A-z]).{5,12}" name="username" title="Username" required></label>
+                        <label>Re-type Username*<input id="password2" type="password" name="username2" title="Re-type Username" required></label>
+                        <button type="button" id="submitButton">Send Feedback</button>  
+                    </fieldset> 
+                </form>
+                <table id="form-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Form input</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Field</th>
+                            <th>Value</th>
+                        </tr>
+                        <tr>
+                            <td>Name:</td>
+                            <td id="name-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td id="email-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Rating:</td>
+                            <td id="rating-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Username:</td>
+                            <td id="username-td"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </main>
             <footer>
                 <p id="copyright">Copyright </p>
@@ -123,5 +162,8 @@
             <script src="scripts/menu.js"></script>
             <script src="scripts/darkModeToggle.js"></script>
             <script src="scripts/getVisits.js"></script>
+            <script src="scripts/getRating.js"></script>
+            <script src="scripts/checkPassword.js"></script>
+            <script src="scripts/createTable.js"></script>
         </body>
     </html>

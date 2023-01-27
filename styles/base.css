@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
+:root {
+  --wide: span 2;
+  --tall: span 2;
+  --black-border: 1px solid black;
+
+}
+
 .card {
     display: block;
     border-style: solid;
@@ -15,7 +22,11 @@
 }
 
 .tall-card {
-  grid-row: span 2;
+  grid-row: var(--tall);
+}
+
+.wide-card {
+  grid-column: var(--wide);
 }
 
 #filler-div.close {
@@ -161,4 +172,53 @@ footer {
 
 li {
     list-style: none;
+}
+
+fieldset {
+  border: var(--black-border);
+  border-radius: 10px;
+}
+
+fieldset label {
+  display: block;
+  margin: 1rem 0;
+
+}
+
+label input {
+  display: block;
+}
+
+#rating-input {
+  width: 50%;
+}
+
+#submitButton:disabled:hover {
+  cursor: not-allowed;
+}
+
+.valid {
+  background: rgb(160, 253, 160);
+}
+
+.invalid {
+  background: rgb(250, 150, 150);
+}
+
+thead tr th {
+  border: var(--black-border);
+}
+
+table {
+  border: var(--black-border);
+  padding: 2rem;
+}
+
+tbody tr td {  
+  border: var(--black-border);
+  padding: 1rem;
+}
+
+.hide-table {
+  display: none;
 }
