@@ -1,0 +1,33 @@
+{
+    "familyName" : "Palmer",
+    "movedInYear" : 2005,
+    "familyMemberAmount" : 5,
+    "visitedByBishopric" : false,
+    "familyMembers" : [
+        {
+            "name" : "Noah",
+            "gender" : "Male",
+            "birthdate" : "12/30/2007"
+        },
+        {
+            "name" : "Emma",
+            "gender" : "Female",
+            "birthdate" : "4/6/2005"
+        },
+        {
+            "name" : "Vaughn",
+            "gender" : "Male",
+            "birthdate" : "5/30/2003"
+        },
+        {
+            "name" : "Hannah",
+            "gender" : "Female",
+            "birthdate" : "6/6/2001"
+        },
+        {
+            "name" : "Isabelle",
+            "gender" : "Female",
+            "birthdate" : "3/30/1999"
+        }
+    ]
+}

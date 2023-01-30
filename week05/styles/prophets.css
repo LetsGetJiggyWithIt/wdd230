@@ -1,0 +1,50 @@
+body {
+    background: wheat;
+}
+
+section {
+    background: #B9B8CD;
+    margin: 2rem;
+    padding: 1rem;
+    border: 2px solid #4D4C97;
+    text-align: center;
+
+}
+
+img {
+    box-shadow: 0px 0px 20px 5px;
+}
+
+h2 {
+    color: #4D4C97;
+    font-weight: bolder;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    background: #DDDCDC;
+    padding: 1rem;
+    box-shadow: 0px 0px 20px 5px;
+}
+
+header {
+    text-align: center;
+    color: #4D4C97;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+@media screen and (min-width: 945px) {
+    main {    
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-auto-flow: column;
+    }
+
+    section {
+        display: inline-block;
+    }
+}
