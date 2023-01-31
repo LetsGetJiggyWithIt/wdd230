@@ -1,7 +1,7 @@
 const assignmentList = document.querySelector("#assignments");
 async function getAssignments () {
     try {
-        let response = await fetch("/scripts/course-assignments.json");
+        let response = await fetch("course-assignments.json");
         if (response.ok) {
             const data = await response.json();
             console.log(data);
