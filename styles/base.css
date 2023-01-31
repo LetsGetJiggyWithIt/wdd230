@@ -7,6 +7,11 @@
 
 }
 
+.title {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
 .card {
     display: block;
     border-style: solid;

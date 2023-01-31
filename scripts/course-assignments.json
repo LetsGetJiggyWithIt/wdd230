@@ -1,0 +1,82 @@
+{
+    "week01" : [
+        {
+            "name" : "Applied Javascript",
+            "url" : "week01/applied-javascript-activity/index.html"
+        },
+
+        {
+            "name" : "Media Query",
+            "url" : "week01/mediaquery.html"
+        }
+    ],
+
+    "week02" : [
+        {
+            "name" : "Design Principles",
+            "url" : "week02/design.html"
+        },
+        {
+            "name" : "Responsive Menu",
+            "url" : "https://codepen.io/LetsGetJiggyWithIt/pen/GRBWZbK"
+        },
+        {
+            "name" : "BOM Top 10",
+            "url" : "week02/bom.html"
+        }
+    ],
+    "week03" : [
+        {
+            "name" : "WebP",
+            "url" : "week03/images/landscape.webp"
+        },
+        {
+            "name" : "Lazy Loading",
+            "url" : "week03/lazyload.html"
+        },
+        {
+            "name" : "Responsive Images",
+            "url" : "https://codepen.io/LetsGetJiggyWithIt/pen/dyjZEVy"
+        },
+        {
+            "name" : "Local Storage",
+            "url" : "week03/bom.html"
+        }
+    ],
+    "week04" : [
+        {
+            "name" : "Pseudo Classes",
+            "url" : "https://codepen.io/LetsGetJiggyWithIt/pen/rNrJPNm"
+        },
+        {
+            "name" : "Combinator Excercises",
+            "url" : "week04/images/combinator-Exercises.png"
+        },
+        {
+            "name" : "Table Building",
+            "url" : "week04/tablebuild.html"
+        },
+        {
+            "name" : "HTML Forms",
+            "url" : "week04/form-start/form-start/index.html"
+        }
+    ],
+    "week05" : [
+        {
+            "name" : "Pseudo Elements",
+            "url" : "https://codepen.io/LetsGetJiggyWithIt/pen/zYLJrwm"
+        },
+        {
+            "name" : "JSON",
+            "url" : "week05/new-ward-members.json"
+        },
+        {
+            "name" : "Fetch Activity",
+            "url" : "week05/prophets.html"
+        },
+        {
+            "name" : "Weather API Activity",
+            "url" : "week05/weather.html"
+        }
+    ]
+}
