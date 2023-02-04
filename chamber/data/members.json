@@ -1,11 +1,11 @@
 {
     "members" : [
         {
-            "name" : "John Doe's Deer Cleaning",
+            "name" : "John Doe's Deer Care",
             "address" : "233 Stag Circle, Deer County",
             "number" : "5555555554",
-            "url" : "https://www.wecleandeers.com",
-            "img" : "images/deer-cleaner.png",
+            "url" : "https://www.wecarefordeers.com",
+            "img" : "images/deer-care.png",
             "memberLevel" : "Bronze"
         },
         {
