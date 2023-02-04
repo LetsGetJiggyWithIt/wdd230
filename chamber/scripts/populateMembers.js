@@ -1,5 +1,5 @@
 const directoryDiv = document.querySelector("#directory-container");
-const memberUrl = "/chamber/data/members.json";
+const memberUrl = "/wdd230/chamber/data/members.json";
 
 var gridViewButton;
 var listViewButton;
