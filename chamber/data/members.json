@@ -1,0 +1,60 @@
+{
+    "members" : [
+        {
+            "name" : "John Doe's Deer Cleaning",
+            "address" : "233 Stag Circle, Deer County",
+            "number" : "5555555554",
+            "url" : "https://www.wecleandeers.com",
+            "img" : "images/deer-cleaner.png",
+            "memberLevel" : "Bronze"
+        },
+        {
+            "name" : "Deseret Industries",
+            "address" : "2994 S Glen Eagle Dr",
+            "number" : "8019633907",
+            "url" : "https://www.deseretindustries.org",
+            "img" : "images/deseret-industries.png",
+            "memberLevel" : "Non-Profit"
+        },
+        {
+            "name" : "Felix Cited's Party Planning",
+            "address" : "5554 Celebration Street, Fun County",
+            "number" : "4444444445",
+            "url" : "https://www.funfunfun.com",
+            "img" : "images/party-planner.png",
+            "memberLevel" : "Silver"
+        },
+        {
+            "name" : "Hedda Hare's Barber Shop",
+            "address" : "4321 S, 1234 W, Mane County",
+            "number" : "4555544554",
+            "url" : "https://www.hareshaircare.com",
+            "img" : "images/barber.png",
+            "memberLevel" : "Bronze"
+        },
+        {
+            "name" : "Warren Peace's Marriage Counseling",
+            "address" : "5554 S, 5444 W, Matrimony County",
+            "number" : "5444555445",
+            "url" : "https://www.fixtheunfixable.com",
+            "img" : "images/marriage-counselor.png",
+            "memberLevel" : "Gold"
+        },
+        {
+            "name" : "Stann Dupp's Physical Therapy",
+            "address" : "1111 S, 2222 W, Recovery County",
+            "number" : "0123456789",
+            "url" : "https://www.walkitoff.com",
+            "img" : "images/physical-therapist.png",
+            "memberLevel" : "Silver"
+        },
+        {
+            "name" : "Sarah Nader's Singing Lessons",
+            "address" : "6789 S, 9876 E, Melody County",
+            "number" : "9876543210",
+            "url" : "https://www.singifiwantto.com",
+            "img" : "images/music-teacher.png",
+            "memberLevel" : "Bronze"
+        }
+    ]
+}

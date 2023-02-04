@@ -26,6 +26,66 @@ label.radio {
   margin: 0.3rem 0;
 }
 
+#format-button-div {
+  display: flex;
+  width: 20%;
+  margin: auto;
+}
+
+.directory .card {
+  text-align: center;
+}
+
+main.list-view #format-button-div {
+  width: calc(20% - 0.8rem);
+}
+
+#format-button-div img {
+  margin: auto;
+  background: var(--tea-green);
+  border-radius: 10px;
+  height: 60%;
+  width: 30%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 2px solid var(--blue-ncs);
+}
+
+#directory-container.list-view {
+  background: none;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+main.list-view {
+  padding: 0;
+  width: calc(60% + 4rem);
+  background: var(--dark-sea-green);
+}
+
+main.list-view h1 {
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+main.list-view #format-button-div {
+  padding: 0 2rem;
+}
+
+#format-button-div img:hover {
+  background: #d7edcb;
+  cursor: pointer;
+}
+
+#format-button-div img.active {
+  background:rgb(109, 202, 125);
+}
+
+img.hidden {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -36,6 +96,30 @@ a:visited {
 
 a:link {
   color: var(--prussian-blue);
+}
+
+.card a:link {
+  color: #1b712a;
+  text-decoration: underline;
+  overflow-wrap: break-word;
+}
+
+.directory-logo {
+  border-radius: 50%;
+  max-width: 100px;
+}
+
+div.list-view {
+  text-align: center;
+}
+
+.list-view {
+  background: #aed09b;
+  padding: 1rem;
+}
+
+div.list-view:nth-child(odd){
+  background: var(--tea-green);
 }
 
 #submitButton {
