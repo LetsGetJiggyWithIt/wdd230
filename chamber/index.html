@@ -51,6 +51,9 @@
                         <button class="hero-button"><a href="join.html">Join Now</a></button>
                     </div>
                 </div>
+                <section id="banner" class="banner">
+                    <h3>Join us for our Meet and Greet this Wednesday @7:00PM!</h3>
+                </section>
                 </section>
                 <h1>Current and Upcoming events</h1>
                 <section class="card">
@@ -64,22 +67,17 @@
                     <button>Learn More</button>
                 </section>
                 <h1>Weather</h1>
-                <section class="card wide-card">
-                    <h2>Sunny</h2>
-                    <p>☀️It's hot.☀️</p>
-                    <p>Humidity:</p>
-                    <p>Wind Chill:</p>
+                <section class="card wide-card" id="weather">
+                    <div id="current-weather">
+                        <h3>Current Weather</h3>
+                    </div>
+                    <div id="forecast" class="weather-grid">
+                        <h3>3 Day Forecast</h3>
+                    </div>
                 </section>
                 <h1>Highlights</h1>
-                <section class="card">
-                    <h2>How I became a Millionare: Featuring Lotso Moe Nee.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    <a href="#">Read more</a>
-                </section>
-                <section class="card">
-                    <h2>Top 5 Business tips from Mr. Well Thee</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    <a href="#">Read more</a>
+                <section id="highlights" class="highlights card wide-card">
+
                 </section>
             </main>
             <footer class="round-top">
@@ -93,7 +91,10 @@
                 <p class="social-icon"><a href="https://instagram.com"><img src="images/instagram-new.png" alt="Instagram Icon" width="50"></a></p>
             </footer>
             <script src="scripts/menu.js"></script>
-            <script src="scripts/darkModeToggle.js"></script>
             <script src="scripts/getDates.js"></script>
+            <script src="scripts/weather.js"></script>
+            <script src="scripts/banner.js"></script>
+            <script src="scripts/populateHighlights.js"></script>
+            <script src="scripts/darkModeToggle.js"></script>
         </body>
     </html>

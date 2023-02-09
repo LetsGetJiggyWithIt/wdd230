@@ -13,6 +13,34 @@ fieldset legend{
   padding: 0 .5rem;
 }
 
+#highlights.card {
+  text-align: center;
+}
+
+#highlights.card.dark {
+  background: var(--prussian-blue);
+}
+
+#highlights>.card {
+  background: var(--tea-green);
+}
+
+#highlights.dark>.card {
+  background: var(--blue-ncs);
+}
+
+#weather.dark {
+  background: var(--prussian-blue);
+}
+
+#weather>*>.card {
+  background: var(--tea-green);
+}
+
+#weather.dark>*>.card {
+  background: var(--blue-ncs);
+}
+
 label.top input{
   display: block;
   min-height: 44px;
@@ -122,6 +150,26 @@ div.list-view:nth-child(odd){
   background: var(--tea-green);
 }
 
+div.list-view.dark {
+  background: rgb(27, 113, 42);
+}
+
+div.list-view:nth-child(odd).dark{
+  background: #31a745;
+}
+
+div.list-view.dark>* {
+  color: #81d190;
+}
+
+div.list-view.dark section p a:link {
+  color: #035011;
+}
+
+div.list-view.dark section p a:visited {
+  color: #055213;
+}
+
 #submitButton {
   background: #9ae9a8;
   border: none;
@@ -150,6 +198,10 @@ div.list-view:nth-child(odd){
   grid-auto-flow: column;
   gap: 0px;
   color: rgb(27, 113, 42);
+}
+
+.discover-images.dark {
+  background: var(--dark-sea-green);
 }
   
 .sidebar {
@@ -202,19 +254,38 @@ div.list-view:nth-child(odd){
     border-radius: 10px;
 }
 
-
 .card {
     display: block;
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
-    margin-top: auto;
-    margin-bottom: 2rem;
     padding: 2rem;
     border-left: 8px solid var(--camel);
     border-left-style: solid;
     border-left-width: 8px;
     background: var(--blue-ncs);
+    color: #1b712a;
+    margin-bottom: 2rem;
+}
+
+.banner {
+    margin-top: 2rem;
+    display: none;
+    background: #39bfec;
+    color: #0c85ad;
+    width: 100%;
+    margin-left: -2rem;
+    grid-column: span 2;
+    padding: 2rem;
+}
+
+.banner.dark {
+  background: var(--prussian-blue);
+}
+
+.card.dark {
+  background: var(--prussian-blue);
+  color: var(--dark-sea-green);
 }
 
 .social-icon {

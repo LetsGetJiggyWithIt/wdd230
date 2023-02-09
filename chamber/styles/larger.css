@@ -31,8 +31,38 @@
 
     section.card {
         text-align: center;
-        width: 80%;
-        margin: auto;
+    }
+
+    .weather-grid>h3 {
+        grid-column: span 3;
+    }
+
+    .weather-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-auto-flow: column;
+        gap: 2rem;
+    }
+
+    .weather-grid .card {
+        border: 1px solid black;
+        border-left: 8px solid var(--camel);
+    }
+
+    .banner {
+        margin-top: 0;
+    }
+
+    #highlights.card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: column;
+        gap: 2rem;
+    }
+
+    .highlights .card>* {
+        font-size: 1.6vw;
     }
 
     div.list-view {
@@ -168,8 +198,8 @@
         border-radius: 10px;
         border-left-style: solid;
         border-left-width: 8px;
-        margin-top: auto;
         padding: 1rem;
+        margin-bottom: 0;
     }
     .wide-card {
         grid-column: span 2;

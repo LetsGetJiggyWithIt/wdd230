@@ -28,18 +28,38 @@ function toggleCards() {
     directoryCards.forEach(card => {
         card.classList.toggle("card");
         card.classList.toggle("list");
-        if (card.className == "list") {
+        if (card.classList.contains("list") == true) {
             div = document.createElement("div");
             div.appendChild(card);
+            div.classList.add("list-view");
             directoryDiv.appendChild(div);
-            div.setAttribute("class", "list-view");
         }
         else {
             directoryDiv.appendChild(card);
             allDivs = document.querySelectorAll("#directory-container div");
             allDivs.forEach(div => {
                 directoryDiv.removeChild(div);
-            })
+            });
         }
     });
+    checkForDarkMode();
+}
+
+function checkForDarkMode () {
+    if (darkModeOn == "true") {
+	    let listViewItems = document.querySelectorAll("div.list-view");
+		listViewItems.forEach(item => {
+			item.classList.add("dark");
+		});
+        let gridViewItems = document.querySelectorAll("section.card");
+        gridViewItems.forEach(item => {
+			item.classList.add("dark");
+		});
+    }
+    else {
+        let gridViewItems = document.querySelectorAll("section.card");
+        gridViewItems.forEach(item => {
+			item.classList.remove("dark");
+		});
+    }
 }

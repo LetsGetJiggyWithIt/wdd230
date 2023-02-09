@@ -1,5 +1,8 @@
 const directoryDiv = document.querySelector("#directory-container");
 const memberUrl = "/wdd230/chamber/data/members.json";
+let isDirectoryPage = true;
+//ADD THIS TO THE LINE BEFORE COMMITING ABOVE OR YOUR .JSON FILE CAN'T BE READ ON GITHUB
+/* ---------------------> /wdd230  <-----------------------*/
 
 var gridViewButton;
 var listViewButton;
@@ -57,13 +60,18 @@ async function getMembers (url) {
 
             //Populate Directory
             directoryDiv.appendChild(card);
-            gridViewButton = document.querySelector("#grid-view");
-            listViewButton = document.querySelector("#list-view");
-            directoryCards = document.querySelectorAll("main div section");
-            directoryImages = document.querySelectorAll(".card img");
-            gridViewButton.addEventListener("click", function(){toggleView("grid");});
-            listViewButton.addEventListener("click", function(){toggleView("list");});
         });
+        gridViewButton = document.querySelector("#grid-view");
+        listViewButton = document.querySelector("#list-view");
+        directoryCards = document.querySelectorAll("main div section");
+        directoryImages = document.querySelectorAll(".card img");
+        gridViewButton.addEventListener("click", function(){toggleView("grid");});
+        listViewButton.addEventListener("click", function(){toggleView("list");});
+        gridViewButton.addEventListener("click", checkForDarkMode);
+        listViewButton.addEventListener("click", checkForDarkMode);
+        if (darkModeOn == "true") {
+            toggleMode();
+        }
     }
 }
 
