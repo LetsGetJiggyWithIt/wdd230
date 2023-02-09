@@ -6,7 +6,7 @@ const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?q=West+Valle
 const testUrl = "https://api.openweathermap.org/data/2.5/forecast?q=West+Valley+City&appid=c8cf3f368ce9864493bb89e2ca0583e5&units=imperial";
 const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const currentDate = new Date();
-const currentDay = currentDate.getDay();
+let currentDay = currentDate.getDay();
 
 async function apiFetch () {
     try {

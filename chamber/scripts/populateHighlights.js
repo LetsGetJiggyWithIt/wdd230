@@ -2,7 +2,7 @@ let highlightMembers = [];
 const highlightsCard = document.querySelector("#highlights");
 
 async function getHighlights () {
-    const response = await fetch("/chamber/data/members.json");
+    const response = await fetch("/wdd230/chamber/data/members.json");
     const data = await response.json();
     data.members.forEach(member => {
         if (member.memberLevel == "Silver" || member.memberLevel == "Gold") {
