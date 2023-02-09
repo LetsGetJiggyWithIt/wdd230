@@ -1,5 +1,5 @@
 const directoryDiv = document.querySelector("#directory-container");
-const memberUrl = "/chamber/data/members.json";
+const memberUrl = "/wdd230/chamber/data/members.json";
 let isDirectoryPage = true;
 //ADD THIS TO THE LINE BEFORE COMMITING ABOVE OR YOUR .JSON FILE CAN'T BE READ ON GITHUB
 /* ---------------------> /wdd230  <-----------------------*/
