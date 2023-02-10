@@ -1,4 +1,3 @@
-const sidebar = document.querySelector(".sidebar");
 const sidebarMenu = document.querySelector(".sidebar-menu");
 const sidebarContent = document.querySelector(".sidebar-content");
 let menuOpen = false;

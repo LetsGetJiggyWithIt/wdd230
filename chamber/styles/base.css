@@ -13,6 +13,10 @@ fieldset legend{
   padding: 0 .5rem;
 }
 
+fieldset {
+  margin: 1rem 0;
+}
+
 #highlights.card {
   text-align: center;
 }
@@ -38,7 +42,7 @@ fieldset legend{
 }
 
 #weather.dark>*>.card {
-  background: var(--blue-ncs);
+  background: #046b8e;
 }
 
 label.top input{
@@ -51,29 +55,35 @@ label.top input{
 
 label.radio {
   display: block;
-  margin: 0.3rem 0;
+  margin: 0.8rem 0;
 }
 
 #format-button-div {
   display: flex;
-  width: 20%;
   margin: auto;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#format-button-div.list-view {
+  padding: 0;
+  margin: 0 1.5rem;
+  background: none;
 }
 
 .directory .card {
   text-align: center;
 }
 
-main.list-view #format-button-div {
-  width: calc(20% - 0.8rem);
+form {
+  width: 100%;
 }
 
 #format-button-div img {
-  margin: auto;
   background: var(--tea-green);
   border-radius: 10px;
   height: 60%;
-  width: 30%;
+  width: 2.5rem;
   padding: 5px;
   margin-bottom: 10px;
   border: 2px solid var(--blue-ncs);
@@ -88,17 +98,13 @@ main.list-view #format-button-div {
 
 main.list-view {
   padding: 0;
-  width: calc(60% + 4rem);
+  width: 100%;
   background: var(--dark-sea-green);
 }
 
 main.list-view h1 {
-  padding: 2rem;
+  padding: 1.5rem;
   padding-bottom: 0;
-}
-
-main.list-view #format-button-div {
-  padding: 0 2rem;
 }
 
 #format-button-div img:hover {
@@ -201,7 +207,7 @@ div.list-view.dark section p a:visited {
 }
 
 .discover-images.dark {
-  background: var(--dark-sea-green);
+  background: #1f5328;
 }
   
 .sidebar {
@@ -210,11 +216,16 @@ div.list-view.dark section p a:visited {
   bottom: 0;
   z-index: 2;
   font-size: calc(10px + 0.2vw);
-  background: var(--prussian-blue);
+  background: #09a9ed;
   border-top-right-radius:10px;
   max-width: 150px;
   border-top: 1px solid var(--dark-sea-green);
   border-right: 1px solid var(--dark-sea-green);
+}
+
+.sidebar.dark {
+  background: rgb(9, 129, 59);
+  color: var(--tea-green);
 }
 
 .sidebar.maximized {
@@ -269,6 +280,10 @@ div.list-view.dark section p a:visited {
     padding: 10px;
     border-radius: 10px;
     margin: auto;
+}
+
+.image-div.dark {
+  background: var(--prussian-blue);
 }
 
 .image-div p {
@@ -358,14 +373,23 @@ div.list-view.dark section p a:visited {
   height: 85px;
 }
 
+.learn-button {
+  color: var(--prussian-blue);
+}
+
+.learn-button:hover {
+  color: var(--dark-sea-green);
+}
+
 body {
     display: grid;
     height: 100vh;
     grid-template: auto 1fr auto / 300px 1fr auto;
     background: var(--blue-ncs);
-    padding: 13px 13px 0px 13px;
+    padding: 13px 13px 13px 13px;
     font-family: 'Roboto Mono';
     margin: 0;
+    margin-bottom: 2rem;
 }
 
 .hero-div img {
@@ -388,8 +412,8 @@ picture {
 }
 
 .hero-label {
-  padding-left: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
   grid-column: 1 / 3;
   grid-row: 2/3;
   z-index: 1;
@@ -397,11 +421,12 @@ picture {
 }
 
 .hero-label p {
-  font-size: 3vw;
+  font-size: 3.8vw;
   display: inline;
   align-self: flex-end;
   margin: 0px;
   margin-right: 1rem;
+  color: #369e49;
 }
 
 .hero-div img {
@@ -416,13 +441,13 @@ picture {
   background: var(--blue-ncs);
   padding: .5rem;
   font-family: "Roboto Mono";
-  font-size: 1.8vw;
+  font-size: 2.5vw;
   align-self: flex-end;
 }
 
 .hero-button a {
   text-decoration: none;
-  color: var(--dark-sea-green);
+  color: #a6fdb6;
 }
 
 .hero-button:hover {
@@ -444,7 +469,8 @@ picture {
     padding: 0;
     margin: 0;
     overflow: hidden;
-    z-index: 2;
+    z-index: 3;
+    border-radius: 10px;
 }
 
 .menu.open {
@@ -457,6 +483,10 @@ picture {
   
 .active {
   background: #6ca876;
+}
+
+.dark .active{
+  background: rgb(32, 77, 39);
 }
   
 .menu li a {
@@ -472,6 +502,17 @@ picture {
     display: block;
     background: #6ca876;
     color: #fff;
+}
+
+.menu li:first-child a.close {
+  height: calc(85px - 1rem);
+  padding: 0.5rem;
+}
+
+.menu li:first-child a.dark{
+  display: block;
+  background:rgb(32, 77, 39);
+  color: #fff;
 }
 
 ul:first-child {
@@ -507,6 +548,22 @@ nav {
   background: var(--dark-sea-green);
 }
 
+.menu li.dark {
+  background:rgb(44, 145, 60);
+}
+
+.menu li:nth-child(odd) {
+  background:rgb(132, 209, 144);
+}
+
+.menu li.dark:nth-child(odd) {
+  background:rgb(66, 171, 84);
+}
+
+nav.dark {
+  background:rgb(27, 113, 42);
+}
+
 header {
     display: block;
     background: var(--prussian-blue);
@@ -516,10 +573,9 @@ header {
 }
 
 main {
-  margin: auto;
   grid-column: 1 / 4;
-  padding: 2rem;
-  width: 60%;
+  padding: 1.5rem;
+  width: auto;
   max-width: 1060px;
   background: var(--dark-sea-green);
   font-size: 15px;
@@ -532,6 +588,16 @@ footer {
   text-align: center;
   grid-column: 1 / 4;
   color: var(--blue-ncs);
+  margin-top: 2rem;
+}
+
+header.round-bottom {
+  border-radius: 0;
+}
+
+main.round-bottom {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 li {

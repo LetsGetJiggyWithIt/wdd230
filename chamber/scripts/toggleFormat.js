@@ -1,5 +1,6 @@
 mainElement = document.querySelector("main");
 currentView = "grid";
+const directoryViewDiv = document.querySelector("#format-button-div");
 
 function toggleView(view) {
     if (view != currentView) {
@@ -24,6 +25,9 @@ function toggleImages () {
 function toggleCards() {
     directoryDiv.classList.toggle("list-view");
     mainElement.classList.toggle("list-view");
+    directoryViewDiv.classList.toggle("list-view");
+    gridViewButton.classList.toggle("list-view");
+    listViewButton.classList.toggle("list-view");
 
     directoryCards.forEach(card => {
         card.classList.toggle("card");

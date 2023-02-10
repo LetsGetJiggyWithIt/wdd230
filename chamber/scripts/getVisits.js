@@ -9,6 +9,7 @@ function GetDaysSinceLastVisit(last, current) {
     current = Math.round(current / 60000 / 60 / 24);
     last = Math.round(last / 60000 / 60 / 24);
     days = current - last;
+    
     return days;
 }
 if (visits !== 0) {

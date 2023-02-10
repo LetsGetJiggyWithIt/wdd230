@@ -81,7 +81,7 @@ async function apiFetch () {
                 
                 //Populates Weather Card
                 let forecastCard = document.createElement("section");
-                forecastCard.classList.add("card");
+                forecastCard.classList.add("card", "forecast");
                 let forecastParagraph = document.createElement("p");
                 forecastParagraph.innerHTML += `${currentTemp}\n${currentDesc}`;
                 let cardHeader = document.createElement("h4");
@@ -102,6 +102,13 @@ async function apiFetch () {
     } catch (error) {
         console.log(error);
     }
+
+    let forecastCards = document.querySelectorAll(".forecast");
+    forecastCards.forEach(card => {
+        if (darkModeOn == "true") {
+            card.classList.toggle("dark");
+        }
+    });
 }
 
 apiFetch();
