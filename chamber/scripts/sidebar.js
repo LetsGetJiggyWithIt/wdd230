@@ -14,7 +14,7 @@ sidebarMenu.addEventListener("click", () => {
     }
     else {
         menuOpen = false;
-        sidebarMenu.setAttribute("src", "/images/hamburger.svg");
+        sidebarMenu.setAttribute("src", "images/hamburger.svg");
         sidebarMenu.setAttribute("alt", "Open Sidebar");
     }
 });
