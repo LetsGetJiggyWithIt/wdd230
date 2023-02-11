@@ -68,6 +68,12 @@ function populateHighlightCards () {
 
         highlightsCard.appendChild(currentHighlight);
     }
+    let lightCards = document.querySelectorAll("#highlights .card");
+    lightCards.forEach(card => {
+        if (card.classList.contains("dark") == false && darkModeOn == "true") {
+            card.classList.toggle("dark");
+        }
+    });
 }
 
 function ToNumber(number) {

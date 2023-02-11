@@ -189,15 +189,12 @@
     .sidebar {
         position: static;
         grid-column: 1/2;
-        background: var(--prussian-blue);
-        grid-column: 1/2;
         padding: 1rem;
         grid-row: 1 / -1;
         border-top-left-radius:10px;
         border-bottom-left-radius: 10px;
         border-top-right-radius: 0;
         width: auto;
-        padding: 1rem;
     }
 
     .sidebar-content {
@@ -290,7 +287,7 @@
     }
 
     .menu li.dark {
-        background: rgb(41, 132, 56);
+        background:#1F6129;
     }
 
     .menu li:nth-child(odd) {
@@ -298,6 +295,6 @@
     }
     
     .menu li.dark:nth-child(odd) {
-      background:rgb(41, 132, 56);
+        background:#1F6129;
     }
 }

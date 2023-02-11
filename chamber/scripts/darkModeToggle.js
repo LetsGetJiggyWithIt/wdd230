@@ -7,6 +7,8 @@ let darkModeOn = window.localStorage.getItem("darkMode-ls");
 const discoverImagesSection = document.querySelector(".discover-images");
 const menuItemContainers = document.querySelectorAll(".menu li");
 const sidebar = document.querySelector(".sidebar");
+const form = document.querySelector("form");
+const directory = document.querySelector(".directory");
 
 modeButton.addEventListener("click", toggleMode);
 
@@ -15,7 +17,7 @@ function toggleMode (firstTime) {
 	let listViewItems = document.querySelectorAll(".list-view");
 	let cards = document.querySelectorAll(".card");
 	if (modeButton.textContent.includes("Dark Mode☑️")) {
-		main.style.background = "#1b712a";
+		main.style.background = "#196726";
 		main.style.color = "var(--tea-green)";
         cards.forEach(item => {
 			item.classList.toggle("dark");
@@ -37,6 +39,12 @@ function toggleMode (firstTime) {
 		if (typeof banner !== "undefined") {
 			banner.classList.toggle("dark");
 		}
+		if (typeof form !== "undefined" && form !== null) {
+			form.classList.toggle("dark");
+		}
+		if (typeof directory !== "undefined" && directory !== null) {
+			directory.classList.toggle("dark");
+		}
 		if (typeof discoverImagesSection !== "undefined" && discoverImagesSection !== null) {
 			discoverImagesSection.classList.toggle("dark");
 		}
@@ -47,7 +55,7 @@ function toggleMode (firstTime) {
 		}
 	} else {
 		main.style.background = "var(--dark-sea-green)";
-		main.style.color = "#1b712a";
+		main.style.color = "#134E1D";
 		cards.forEach(item => {
 			item.classList.toggle("dark");
 		});
@@ -63,6 +71,12 @@ function toggleMode (firstTime) {
 		if (typeof discoverImagesSection !== "undefined" && discoverImagesSection !== null) {
 			discoverImagesSection.classList.toggle("dark");
 		}
+		if (typeof form !== "undefined" && form !== null) {
+			form.classList.toggle("dark");
+		}
+		if (typeof directory !== "undefined" && directory !== null) {
+			directory.classList.toggle("dark");
+		}
 		nav.classList.toggle("dark");
 		menuItemContainers.forEach(item => {
 			item.classList.toggle("dark");
@@ -77,7 +91,6 @@ function toggleMode (firstTime) {
 			darkModeOn = window.localStorage.getItem("darkMode-ls");
 		}
 	}
-	console.log(darkModeOn);
 }
 
 function lightCard (item) {
