@@ -4,10 +4,10 @@ let isDirectoryPage = true;
 //ADD THIS TO THE LINE BEFORE COMMITING ABOVE OR YOUR .JSON FILE CAN'T BE READ ON GITHUB
 /* ---------------------> /wdd230  <-----------------------*/
 
-var gridViewButton;
-var listViewButton;
-var directoryCards;
-var directoryImages;
+let gridViewButton;
+let listViewButton;
+let directoryCards;
+let directoryImages;
 
 getMembers(memberUrl);
 

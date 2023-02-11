@@ -6,7 +6,7 @@ sidebarMenu.addEventListener("click", () => {
     sidebar.classList.toggle("maximized");
     sidebarContent.classList.toggle("maximized");
     sidebarMenu.classList.toggle("maximized");
-    if (menuOpen != true) {
+    if (menuOpen !== true) {
         menuOpen = true;
         sidebarMenu.setAttribute("src", "images/black-x.svg");
         sidebarMenu.setAttribute("alt", "Close Sidebar");

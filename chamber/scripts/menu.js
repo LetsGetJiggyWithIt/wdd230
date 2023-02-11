@@ -1,8 +1,8 @@
-const menuButton = document.querySelector('#menu-button');
-const menuItems = document.querySelectorAll('.menu-item');
-const menuIcon = document.querySelector('#menu-icon');
-const menu = document.querySelector('.menu');
-const fillerDiv = document.querySelector('#filler-div');
+const menuButton = document.querySelector("#menu-button");
+const menuItems = document.querySelectorAll(".menu-item");
+const menuIcon = document.querySelector("#menu-icon");
+const menu = document.querySelector(".menu");
+const fillerDiv = document.querySelector("#filler-div");
 
 menuButton.addEventListener("click", toggleMenu);
 

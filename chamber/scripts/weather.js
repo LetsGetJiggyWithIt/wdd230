@@ -1,8 +1,8 @@
-const currentWeatherElement = document.querySelector('#current-weather');
+const currentWeatherElement = document.querySelector("#current-weather");
 const forecastElement = document.querySelector("#forecast");
 const weatherCard = document.querySelector("#weather");
 const weatherIcon = document.createElement("img");
-const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?q=West+Valley+City&units=imperial&appid=c8cf3f368ce9864493bb89e2ca0583e5'
+const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?q=West+Valley+City&units=imperial&appid=c8cf3f368ce9864493bb89e2ca0583e5";
 const testUrl = "https://api.openweathermap.org/data/2.5/forecast?q=West+Valley+City&appid=c8cf3f368ce9864493bb89e2ca0583e5&units=imperial";
 const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const currentDate = new Date();

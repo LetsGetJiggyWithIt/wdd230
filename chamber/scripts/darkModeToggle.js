@@ -15,7 +15,7 @@ modeButton.addEventListener("click", toggleMode);
 
 function toggleMode (firstTime) {
 	let listViewItems = document.querySelectorAll(".list-view");
-	let cards = document.querySelectorAll(".card");
+	cards = document.querySelectorAll(".card");
 	if (modeButton.textContent.includes("Dark Mode☑️")) {
 		main.style.background = "#196726";
 		main.style.color = "var(--tea-green)";
