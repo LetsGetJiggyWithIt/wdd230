@@ -412,7 +412,7 @@ picture {
 }
 
 .hero-label {
-  padding-left: 1rem;
+  padding-left: 1.3rem;
   padding-bottom: 1rem;
   grid-column: 1 / 3;
   grid-row: 2/3;
