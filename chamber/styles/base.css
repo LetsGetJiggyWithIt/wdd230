@@ -280,6 +280,7 @@ div.list-view.dark section p a:visited {
     padding: 10px;
     border-radius: 10px;
     margin: auto;
+    width: 90%;
 }
 
 .image-div.dark {
@@ -340,6 +341,11 @@ div.list-view.dark section p a:visited {
     border-top-right-radius: 10px;
 }
 
+.discover-images h3 {
+    text-align: center;
+    grid-column: auto;
+}
+
 .round-bottom {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -371,10 +377,6 @@ div.list-view.dark section p a:visited {
 
 #filler-div.close {
   height: 85px;
-}
-
-.learn-button {
-  color: var(--prussian-blue);
 }
 
 .learn-button:hover {

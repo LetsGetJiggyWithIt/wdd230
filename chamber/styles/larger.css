@@ -72,6 +72,16 @@
         width: calc(100% + .5rem);
     }
 
+    #format-button-div.list-view {
+        width: 100%;
+        margin: auto;
+    }
+
+    .discover-images h3 {
+        text-align: center;
+        grid-column: span 2;
+    }
+
     #directory-container.list-view {
         display: block;
         background: none;
@@ -156,6 +166,10 @@
 
     .wide {
         grid-column: span 2;
+    }
+
+    .image-div {
+        width: auto;
     }
 
     .image-div img:hover {
