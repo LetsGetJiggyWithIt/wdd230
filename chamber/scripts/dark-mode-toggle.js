@@ -17,7 +17,7 @@ function toggleMode (firstTime) {
 	let listViewItems = document.querySelectorAll(".list-view");
 	cards = document.querySelectorAll(".card");
 	if (modeButton.textContent.includes("Dark Mode☑️")) {
-		main.style.background = "#196726";
+		main.classList.add("dark");
         cards.forEach(item => {
 			item.classList.toggle("dark");
 		});
@@ -55,7 +55,7 @@ function toggleMode (firstTime) {
 			darkModeOn = window.localStorage.getItem("darkMode-ls");
 		}
 	} else {
-		main.style.background = "var(--dark-sea-green)";
+		main.classList.remove("dark");
 		cards.forEach(item => {
 			item.classList.toggle("dark");
 		});

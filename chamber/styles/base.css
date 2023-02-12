@@ -356,16 +356,17 @@ div .card.dark {
 .banner {
     margin-top: 2rem;
     display: none;
-    background: #39bfec;
-    color: #0c85ad;
-    width: 100%;
-    margin-left: -2rem;
+    background: var(--tea-green);
+    color: #0D3514;
+    width: calc(100% - 1rem);
+    margin-left: -1.5rem;
     grid-column: span 2;
     padding: 2rem;
 }
 
 .banner.dark {
   background: var(--prussian-blue);
+  color: var(--tea-green);
 }
 
 .card.dark {
@@ -386,7 +387,7 @@ div .card.dark {
     border-top-right-radius: 10px;
 }
 
-.discover-images h3 {
+.discover-images h2 {
     text-align: center;
     grid-column: auto;
 }
@@ -497,6 +498,11 @@ picture {
   text-decoration: none;
   color: var(--prussian-blue);
   font-weight: 900;
+}
+
+main.dark>*>* .hero-button {
+  color: var(--prussian-blue);
+  background: #9ae9a8;
 }
 
 .hero-button:hover {
@@ -623,6 +629,10 @@ main {
   color: #0D3514;
 }
 
+main.dark {
+  background: #196726;
+}
+
 footer {
   background: var(--prussian-blue);
   padding: 1rem;
@@ -651,5 +661,9 @@ h1 {
 
 h2 {
   grid-column: span 2;
+}
+
+.dark h2{
+  color: var(--tea-green);
 }
 
