@@ -168,12 +168,21 @@ a:link {
   color: var(--tea-green);
 }
 
+.directory.list-view h2 {
+  padding-top: 1.5rem;
+  margin-left: 1.5rem;
+}
+
 .directory.dark h2 {
   color: var(--tea-green);
 }
 
 div.list-view {
   text-align: center;
+}
+
+div.list-view:nth-child(odd) {
+  background: rgb(109, 202, 125);
 }
 
 .list-view {
@@ -185,16 +194,20 @@ div.list-view.dark {
   background: rgb(25, 103, 38);
 }
 
+div.list-view.dark:nth-child(odd) {
+  background: rgb(32, 77, 39);
+}
+
 div.list-view.dark>* {
   color: #81d190;
 }
 
 div.list-view.dark section p a:link {
-  color: #81d190;
+  color: var(--tea-green);
 }
 
 div.list-view.dark section p a:visited {
-  color: #81d190;
+  color: var(--tea-green);
 }
 
 div .card.dark {

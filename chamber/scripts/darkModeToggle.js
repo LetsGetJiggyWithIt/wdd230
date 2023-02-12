@@ -18,7 +18,6 @@ function toggleMode (firstTime) {
 	cards = document.querySelectorAll(".card");
 	if (modeButton.textContent.includes("Dark Mode☑️")) {
 		main.style.background = "#196726";
-		main.style.color = "var(--tea-green)";
         cards.forEach(item => {
 			item.classList.toggle("dark");
 		});
@@ -43,7 +42,9 @@ function toggleMode (firstTime) {
 			form.classList.toggle("dark");
 		}
 		if (typeof directory !== "undefined" && directory !== null) {
-			directory.classList.toggle("dark");
+			if (directory.classList.contains("dark") == false) {
+				directory.classList.add("dark");
+			}
 		}
 		if (typeof discoverImagesSection !== "undefined" && discoverImagesSection !== null) {
 			discoverImagesSection.classList.toggle("dark");
@@ -55,7 +56,6 @@ function toggleMode (firstTime) {
 		}
 	} else {
 		main.style.background = "var(--dark-sea-green)";
-		main.style.color = "#134E1D";
 		cards.forEach(item => {
 			item.classList.toggle("dark");
 		});
@@ -75,7 +75,9 @@ function toggleMode (firstTime) {
 			form.classList.toggle("dark");
 		}
 		if (typeof directory !== "undefined" && directory !== null) {
-			directory.classList.toggle("dark");
+			if (directory.classList.contains("dark") == true) {
+				directory.classList.remove("dark");
+			}
 		}
 		nav.classList.toggle("dark");
 		menuItemContainers.forEach(item => {

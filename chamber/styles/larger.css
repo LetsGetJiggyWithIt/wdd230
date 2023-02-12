@@ -186,6 +186,11 @@
         font-size: 15px;
     }
 
+    .directory.list-view h2 {
+        margin-left: 0;
+        padding: 0;
+    }
+
     .sidebar {
         position: static;
         grid-column: 1/2;

@@ -49,6 +49,8 @@ function toggleCards() {
     checkForDarkMode();
 }
 
+modeButton.addEventListener("click", checkForDarkMode);
+
 function checkForDarkMode () {
     if (darkModeOn == "true") {
 	    let listViewItems = document.querySelectorAll("div.list-view");
@@ -65,5 +67,11 @@ function checkForDarkMode () {
         gridViewItems.forEach(item => {
 			item.classList.remove("dark");
 		});
+        let listViewItems = document.querySelectorAll("section.dark.list");
+        listViewItems.forEach(item => {
+            item.classList.remove("dark");
+        });
+        let directoryContainer = document.querySelector("#directory-container");
+        directoryContainer.classList.remove("dark");
     }
 }
