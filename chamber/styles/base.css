@@ -472,6 +472,10 @@ picture {
   display: flex;
 }
 
+main.list-view.dark {
+  background: #196726;
+}
+
 .hero-label p {
   font-size: 3.8vw;
   display: inline;
